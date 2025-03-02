@@ -1,0 +1,13 @@
+# Build/Compiled Files
+build/
+*.o
+*.d
+*.elf
+*.map
+*.bin
+*.a
+
+# SDK & Config Files
+sdkconfig
+sdkconfig.old
+sdkconfig.defaults
