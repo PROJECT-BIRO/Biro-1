@@ -8,5 +8,6 @@
     "interface/ftdi/esp32_devkitj_v1.cfg",
     "target/esp32s3.cfg"
   ],
-  "idf.portWin": "COM4"
+  "idf.portWin": "COM4",
+  "idf.port": "/dev/tty.usbmodem11301"
 }

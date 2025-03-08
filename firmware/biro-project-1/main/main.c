@@ -22,7 +22,6 @@ void app_main(void)
 {
     printf("ESP32 LED Blink Example!\n");
     xTaskCreate(&blink_task, "blink_task", 2048, NULL, 5, NULL);
-    
 }
 
 
