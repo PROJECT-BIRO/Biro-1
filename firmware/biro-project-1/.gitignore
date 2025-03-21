@@ -1,13 +1,36 @@
-# Build/Compiled Files
-build/
-*.o
-*.d
-*.elf
-*.map
-*.bin
-*.a
+# KiCAD files
+*.000
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.sch-bak
+*.net
+*.dsn
+fp-info-cache
+_autosave*.kicad_pcb
+*.kicad_prl
+electronics/*/*backups
 
-# SDK & Config Files
-sdkconfig
-sdkconfig.old
-sdkconfig.defaults
+# Proprietary 3d model (for KiCAD)
+**/proprietary/*.stp
+**/proprietary/*.step
+
+# PlatformIO
+.pio/
+
+# General build outputs
+build/
+
+# Apple/Macintosh
+.DS_Store
+
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+#!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+__pycache__
+

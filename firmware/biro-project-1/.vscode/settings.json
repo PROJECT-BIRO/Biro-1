@@ -1,12 +1,16 @@
 {
-  "C_Cpp.intelliSenseEngine": "default",
-  "idf.flashType": "UART",
-  "idf.customExtraVars": {
-    "IDF_TARGET": "esp32s3"
-  },
-  "idf.openOcdConfigs": [
-    "interface/ftdi/esp32_devkitj_v1.cfg",
-    "target/esp32s3.cfg"
-  ],
-  "idf.portWin": "COM4"
+    "eslint.workingDirectories": [
+        "./software/js/packages/example",
+        "./software/js/packages/smartknobjs",
+        "./software/js"
+    ],
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.associations": {
+        "cstddef": "cpp",
+        "limits": "cpp"
+    },
 }
