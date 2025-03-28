@@ -1,0 +1,2321 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "519f4758-8963-452d-ab07-7848b6d553a7")
+	(paper "C")
+	(lib_symbols
+		(symbol "Diode:1N4148W"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148W"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:D_SOD-123"
+				(at 0 -4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "D*SOD?123*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "1N4148W_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148W_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "ScottoKeebs:Placeholder_Keyswitch"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 3.048 1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Keyswitch"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Placeholder_Keyswitch_0_1"
+				(circle
+					(center -1.1684 1.1684)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.54) (xy 2.54 -0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.016) (xy 2.032 2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.54) (xy -1.524 1.524) (xy -1.524 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 -1.524) (xy 2.54 -2.54) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.143 -1.1938)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 2.54 0)
+					(length 0)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 180)
+					(length 0)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 248.92 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07110bc4-350a-4519-a2b6-5fa51bf1be31")
+	)
+	(junction
+		(at 279.4 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b736490-cf46-40f9-a9c7-22d06a156d92")
+	)
+	(junction
+		(at 274.32 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "35b56ad7-d18b-4ee8-8726-247516c4e045")
+	)
+	(junction
+		(at 248.92 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4633e5a7-2532-4fea-bcbd-2d89100922e7")
+	)
+	(junction
+		(at 299.72 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46bd3816-cec1-49d3-b232-dbc59df2c246")
+	)
+	(junction
+		(at 304.8 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f2ea40f-dd38-47a6-b2b3-3f9c8c194876")
+	)
+	(junction
+		(at 304.8 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60d8b7d8-bfbb-416a-9e3c-13b9626ee265")
+	)
+	(junction
+		(at 299.72 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e7dc1a7-3871-4729-a3c9-f0e7997f9db4")
+	)
+	(junction
+		(at 274.32 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "842831e8-4dff-4106-a235-cd2bed0a4012")
+	)
+	(junction
+		(at 279.4 223.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c94378a2-e212-4f07-a271-352aa0980ec1")
+	)
+	(junction
+		(at 279.4 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7026769-bb5e-41ae-89df-807fd10757be")
+	)
+	(junction
+		(at 304.8 198.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de514e7f-18aa-4f1e-a52d-49c3f75e0a9c")
+	)
+	(bus_entry
+		(at 464.82 128.27)
+		(size 2.54 2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05515c96-464a-4ea8-bc1f-e4a8c995c29c")
+	)
+	(bus_entry
+		(at 353.06 139.7)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e5ffbcc-35f4-4a66-8876-efb6cf274a31")
+	)
+	(bus_entry
+		(at 353.06 144.78)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4842996c-66db-46bb-ac59-3aaccebf5673")
+	)
+	(bus_entry
+		(at 353.06 137.16)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66db2ec7-1da8-4e25-8409-36a41702a68a")
+	)
+	(bus_entry
+		(at 353.06 142.24)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a967e18-ed8a-438d-986e-8568fb47ec5f")
+	)
+	(bus_entry
+		(at 353.06 132.08)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d9c0c11-36a1-44d6-a6e1-620cf4ec8025")
+	)
+	(bus_entry
+		(at 353.06 134.62)
+		(size 2.54 -2.54)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91f7ee12-1043-4c09-bfc5-502a416a9e4e")
+	)
+	(wire
+		(pts
+			(xy 304.8 198.12) (xy 332.74 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0016986c-496d-46f3-97fd-80d53ec2c781")
+	)
+	(wire
+		(pts
+			(xy 304.8 172.72) (xy 330.2 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "066d8b06-35c1-47c5-b4af-79850cfceca5")
+	)
+	(wire
+		(pts
+			(xy 332.74 142.24) (xy 353.06 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08fc8854-76af-4ca9-a00d-1a211261e859")
+	)
+	(wire
+		(pts
+			(xy 299.72 185.42) (xy 299.72 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14f3c33b-feb4-499f-8c93-4415ba86aa78")
+	)
+	(wire
+		(pts
+			(xy 304.8 223.52) (xy 335.28 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23d035d3-3208-44d5-8c17-a725e49171b6")
+	)
+	(bus
+		(pts
+			(xy 355.6 139.7) (xy 355.6 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25b539f8-f11b-4cf0-8ebd-0be7c41b185a")
+	)
+	(wire
+		(pts
+			(xy 248.92 132.08) (xy 248.92 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ceac4b8-f723-43cc-bc2e-7b5f88820916")
+	)
+	(wire
+		(pts
+			(xy 332.74 198.12) (xy 332.74 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31955e2f-061a-4041-aeba-d5c90416e28a")
+	)
+	(wire
+		(pts
+			(xy 248.92 185.42) (xy 248.92 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "356568b4-452a-467f-a164-3887d253c736")
+	)
+	(wire
+		(pts
+			(xy 335.28 144.78) (xy 353.06 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "366a5ff4-276d-4cc6-a449-6f403edbb5a9")
+	)
+	(wire
+		(pts
+			(xy 335.28 223.52) (xy 335.28 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3709aa2e-aa10-49aa-9193-254a56ae356d")
+	)
+	(wire
+		(pts
+			(xy 254 198.12) (xy 279.4 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f652b2b-ddd6-47f2-9417-f35bd874a116")
+	)
+	(wire
+		(pts
+			(xy 248.92 132.08) (xy 353.06 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "435f289f-629a-45c5-b232-0a8810af0ae6")
+	)
+	(wire
+		(pts
+			(xy 279.4 223.52) (xy 304.8 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "638c8c31-6e66-4318-a8b0-d4f9d211d320")
+	)
+	(wire
+		(pts
+			(xy 330.2 139.7) (xy 353.06 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64d575de-177c-4964-9ec6-cf6649239d7f")
+	)
+	(wire
+		(pts
+			(xy 254 172.72) (xy 279.4 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66906b41-9c4a-44cf-a832-6fd7c9b7c794")
+	)
+	(wire
+		(pts
+			(xy 299.72 137.16) (xy 353.06 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70d850c8-8df8-48e9-9c0a-d5364a56b9ae")
+	)
+	(wire
+		(pts
+			(xy 248.92 160.02) (xy 248.92 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e85e71d-d0c3-4dec-a027-d3f000924c97")
+	)
+	(wire
+		(pts
+			(xy 299.72 137.16) (xy 299.72 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83475b76-aa77-4a21-a243-87f3e4ff8c3c")
+	)
+	(wire
+		(pts
+			(xy 274.32 160.02) (xy 274.32 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87d96cd9-f237-4512-ba5e-30f15385c8fe")
+	)
+	(bus
+		(pts
+			(xy 355.6 142.24) (xy 355.6 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90e8e25b-b4ce-45db-b04d-a54ee02d7da9")
+	)
+	(bus
+		(pts
+			(xy 355.6 114.3) (xy 355.6 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95fe4423-f365-4373-9ed8-afa48a33dee2")
+	)
+	(bus
+		(pts
+			(xy 355.6 114.3) (xy 356.87 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "989c7948-3087-4e0b-9946-dc118b57f137")
+	)
+	(bus
+		(pts
+			(xy 355.6 134.62) (xy 355.6 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a56ab07-4189-4081-a5e3-24d741d5dc19")
+	)
+	(wire
+		(pts
+			(xy 279.4 198.12) (xy 304.8 198.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d064191-aeea-4e3a-8b59-1f1c55fdc9e6")
+	)
+	(wire
+		(pts
+			(xy 274.32 185.42) (xy 274.32 210.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a255c4ff-0945-4e01-8e02-822ea205b70a")
+	)
+	(bus
+		(pts
+			(xy 356.87 113.03) (xy 368.3 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b789b620-2941-4694-aff7-24377798c99c")
+	)
+	(wire
+		(pts
+			(xy 299.72 160.02) (xy 299.72 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8b95fa8-8905-4fb8-a3a5-25c63e19a5d2")
+	)
+	(bus
+		(pts
+			(xy 355.6 137.16) (xy 355.6 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d10faa81-ca71-420b-89f2-c19ea80a1bc8")
+	)
+	(wire
+		(pts
+			(xy 254 223.52) (xy 279.4 223.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6453ca8-ea0d-4f9f-ba70-cf63bcffa5e0")
+	)
+	(bus
+		(pts
+			(xy 355.6 132.08) (xy 355.6 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da821702-ef54-4549-b38c-9041b314a1aa")
+	)
+	(wire
+		(pts
+			(xy 279.4 172.72) (xy 304.8 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dff8c93b-ff9b-4970-847d-344f5e154aa2")
+	)
+	(wire
+		(pts
+			(xy 274.32 134.62) (xy 274.32 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e08a2bf8-fb57-43ef-a974-a6eddf1fd7fe")
+	)
+	(bus
+		(pts
+			(xy 355.6 129.54) (xy 355.6 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e93bbfad-9d6b-4b2a-b635-564e3f9677b6")
+	)
+	(wire
+		(pts
+			(xy 274.32 134.62) (xy 353.06 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaa3a16e-4533-4800-af13-102dfa7b79c7")
+	)
+	(wire
+		(pts
+			(xy 330.2 139.7) (xy 330.2 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9b3f57f-b263-4e89-9b45-a8d191e1780f")
+	)
+	(label "COL_1"
+		(at 313.69 134.62 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "409eb5eb-de65-4cdc-b15a-91bb9de1431c")
+	)
+	(label "COL_0"
+		(at 313.69 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93f20c4d-81c1-4a90-b60a-612015cb3669")
+	)
+	(label "ROW_1"
+		(at 337.82 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "969a1bc3-b831-4bfe-9476-f6d405917aae")
+	)
+	(label "ROW_0"
+		(at 337.82 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a25c320f-712a-4503-860e-1a6163eac59c")
+	)
+	(label "ROW_2"
+		(at 337.82 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b6c64e0c-efd0-4d35-bfc7-75572b94b361")
+	)
+	(label "COL_2"
+		(at 313.69 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c729dad4-8389-4127-bd20-e54b9471c036")
+	)
+	(global_label "KEY_M"
+		(shape input)
+		(at 368.3 113.03 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff986872-f10f-49c6-b46f-59da8f51f552")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 377.2118 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 276.86 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b0fae7e-5d37-4e1d-8c32-bfd71b457e6f")
+		(property "Reference" "S2"
+			(at 276.86 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 276.86 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 276.86 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4ecaab9c-0ab7-486e-bbd1-321730c845b7")
+		)
+		(pin "1"
+			(uuid "5bb0cb27-10f6-45fc-a02d-81817d136173")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 254 219.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ac444ad-2398-4a3a-9deb-c8653bd032ec")
+		(property "Reference" "D16"
+			(at 256.54 218.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 256.54 220.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 258.445 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 254 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 254 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 254 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 254 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d0d9cd4e-6702-4e0c-a0f6-03d1f353c13c")
+		)
+		(pin "1"
+			(uuid "002789c8-c5e5-48a5-9adc-bd856cd09bd3")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 279.4 219.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1be34ed7-c997-4a83-afee-11762c540e7f")
+		(property "Reference" "D17"
+			(at 281.94 218.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 281.94 220.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 283.845 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 279.4 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 279.4 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "67dead05-74a5-4258-b171-d43e6dc14e3e")
+		)
+		(pin "1"
+			(uuid "7edbccfe-b0b3-46e1-a9f0-7ad3c4edd7cd")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 254 194.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20a04514-2ff3-4776-b794-833ba4493f2a")
+		(property "Reference" "D13"
+			(at 256.54 193.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 256.54 195.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 258.445 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 254 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 254 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 254 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 254 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4f6959d8-5f77-42a0-8d42-67810e0c736c")
+		)
+		(pin "1"
+			(uuid "6ddc3d4f-f431-48aa-9410-40c168abf70d")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 276.86 213.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "219a87e8-8aad-41c6-ac72-21030653b4a5")
+		(property "Reference" "S8"
+			(at 276.86 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 276.86 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 276.86 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6a8686d2-8697-4cd3-86f2-33c675a18709")
+		)
+		(pin "1"
+			(uuid "372a0785-788e-4307-854f-aec4a93f6c32")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 304.8 194.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d3c7bc0-6138-4ef0-b479-6f58dfeb9d30")
+		(property "Reference" "D15"
+			(at 307.34 193.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 307.34 195.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 309.245 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 304.8 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 304.8 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 304.8 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 304.8 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b7999723-f823-4a90-8f7d-178c70aaf201")
+		)
+		(pin "1"
+			(uuid "17321a27-25f4-4f64-bc93-44570285439d")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 302.26 213.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59b7387b-fe1b-4338-a8f1-574308f407fc")
+		(property "Reference" "S9"
+			(at 302.26 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 302.26 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 302.26 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 302.26 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 302.26 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "77eb2f0e-bc46-454b-84b8-b8b7d76b729a")
+		)
+		(pin "1"
+			(uuid "95f94d67-8fa6-4d75-a2dc-6d95a9cfb8be")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 304.8 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69734750-8a2d-4333-975a-80a97597da9e")
+		(property "Reference" "D12"
+			(at 307.34 167.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 307.34 170.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 309.245 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 304.8 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 304.8 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 304.8 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 304.8 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ba79352a-97fe-4c3b-8cdc-f7b5f03e885d")
+		)
+		(pin "1"
+			(uuid "0d7438dc-c5e3-4b89-9cc2-066a48d5840e")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 279.4 194.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bcceaca-1290-415e-8390-c1e9e7199b13")
+		(property "Reference" "D14"
+			(at 281.94 193.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 281.94 195.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 283.845 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 279.4 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 279.4 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3699f474-a889-4d7e-be9d-d1081ad8875b")
+		)
+		(pin "1"
+			(uuid "ead0f011-dd50-4d5e-b0c8-f8f77cc4e78f")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 276.86 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "880faa09-18e0-45c1-a3d3-107f43ee1f13")
+		(property "Reference" "S5"
+			(at 276.86 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 276.86 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 276.86 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 276.86 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 276.86 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "50b7be17-c07a-4321-b204-85d053d3e93b")
+		)
+		(pin "1"
+			(uuid "f2f1d331-b1b7-4f1b-aa42-1a38a57b13a5")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 251.46 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9709e669-e533-4e33-ac8a-77e788cd3a43")
+		(property "Reference" "S1"
+			(at 251.46 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 251.46 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 251.46 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1d853163-a7a2-4c32-9fda-20a26bf11c0e")
+		)
+		(pin "1"
+			(uuid "1adc297b-363f-4c1d-a727-0fe4b8276d78")
+		)
+		(instances
+			(project ""
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 279.4 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "988ab7f4-3ac1-4e07-a0e1-0c76660d1ae9")
+		(property "Reference" "D11"
+			(at 281.94 167.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 281.94 170.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 283.845 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 279.4 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 279.4 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 279.4 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 279.4 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c172a051-a12b-4b0c-9cc5-e3a2a48ca792")
+		)
+		(pin "1"
+			(uuid "33be91ea-d889-49aa-b3b1-7fc9eef91638")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 304.8 219.71 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aaade140-5d0c-4c86-8c76-2c910967b34c")
+		(property "Reference" "D18"
+			(at 307.34 218.4399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 307.34 220.9799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 309.245 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 304.8 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 304.8 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 304.8 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 304.8 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b74cda29-7ede-4d68-a351-78c41c67d499")
+		)
+		(pin "1"
+			(uuid "cac789a2-a2c6-4ffd-b915-c4d886c00e48")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 251.46 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b002fc3e-b3b3-41eb-adb2-23c6db0e7a25")
+		(property "Reference" "S4"
+			(at 251.46 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 251.46 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 251.46 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fcb82add-b020-4465-bcee-583551c43ebe")
+		)
+		(pin "1"
+			(uuid "152fdbf0-7f40-4bee-8a6a-1d2b7f27408e")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 251.46 213.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d06c56bd-592d-408a-9e61-145b9c7fb71f")
+		(property "Reference" "S7"
+			(at 251.46 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 251.46 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 251.46 213.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b9ede132-ce96-4714-a819-92866e83b7df")
+		)
+		(pin "1"
+			(uuid "4312cd84-7cca-44ae-ae6e-8aa6e962c497")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148W")
+		(at 254 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea5ccd23-1145-4a93-81d5-e18a9bb6601d")
+		(property "Reference" "D10"
+			(at 256.54 167.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148W"
+			(at 256.54 170.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123"
+			(at 258.445 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85748/1n4148w.pdf"
+			(at 254 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "75V 0.15A Fast Switching Diode, SOD-123"
+			(at 254 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 254 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 254 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a165618e-ac32-40be-bd24-008a0ed143ac")
+		)
+		(pin "1"
+			(uuid "5afc5edd-e9ae-489f-9315-1252e7085d79")
+		)
+		(instances
+			(project ""
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 302.26 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed084e04-7a17-4369-8b47-c7fc616b1c4f")
+		(property "Reference" "S6"
+			(at 302.26 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 302.26 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 302.26 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 302.26 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 302.26 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d448bf28-617d-49d4-85f6-2cfc686728fc")
+		)
+		(pin "1"
+			(uuid "e0a41134-e53a-40dc-a0c6-33e3afc86f04")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 302.26 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa95a5d8-4bf5-4227-87e3-0108f5f1869b")
+		(property "Reference" "S3"
+			(at 302.26 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Keyswitch"
+			(at 302.26 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 302.26 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 302.26 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, normally open, two pins, 45° tilted"
+			(at 302.26 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e2f6b071-f39f-4108-a2a8-6e3265903a80")
+		)
+		(pin "1"
+			(uuid "ffa279a7-6711-4878-a6fe-060687ab67c9")
+		)
+		(instances
+			(project "biro-1-rev-0"
+				(path "/78cc1554-fa96-4768-9f48-68fb10f910cc/5fa0b260-b9b7-40ea-b010-c544d43f72e9"
+					(reference "S3")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
