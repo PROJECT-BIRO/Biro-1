@@ -7736,7 +7736,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_A-6373-03A_MOL"
+		(property "Footprint" "022232031:CONN_A-6373-03A_MOL"
 			(at 439.42 175.26 0)
 			(effects
 				(font
@@ -7877,7 +7877,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CONN_A-6373-03A_MOL"
+		(property "Footprint" "022232031:CONN_A-6373-03A_MOL"
 			(at 152.4 200.66 0)
 			(effects
 				(font
