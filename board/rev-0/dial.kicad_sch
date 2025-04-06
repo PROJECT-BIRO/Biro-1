@@ -6389,7 +6389,7 @@
 		)
 		(uuid "9c7da426-c66f-408a-b71b-5c30ecf65330")
 	)
-	(label "LED_DATA_5V"
+	(label "DIAL_LED_DATA_5V"
 		(at 91.44 334.01 0)
 		(effects
 			(font
@@ -6471,7 +6471,7 @@
 			)
 		)
 	)
-	(global_label "LED_DATA"
+	(global_label "DIAL_LED_DATA"
 		(shape input)
 		(at 50.8 334.01 180)
 		(fields_autoplaced yes)
@@ -6483,7 +6483,7 @@
 		)
 		(uuid "6da1a7b1-fb0d-4f03-b9c9-7900cf18684a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 38.9853 334.01 0)
+			(at 34.0262 334.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
