@@ -1,0 +1,15 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "8e229521-7f7e-4daa-9a03-1d97eefa8c4a")
+	(paper "C")
+	(title_block
+		(title "Power")
+		(date "2025-03-28")
+		(rev "0")
+		(company "Biro")
+		(comment 1 "Biro 1")
+	)
+	(lib_symbols)
+)
