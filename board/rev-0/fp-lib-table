@@ -19,4 +19,5 @@
   (lib (name "NAU7802SGI")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/NAU7802SGI.pretty")(options "")(descr ""))
   (lib (name "022232031")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/022232031.pretty")(options "")(descr ""))
   (lib (name "TMC6300")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/TMC6300.pretty")(options "")(descr ""))
+  (lib (name "LED_IN-PI55TAT_INL")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/LED_IN-PI55TAT_INL.pretty")(options "")(descr ""))
 )
