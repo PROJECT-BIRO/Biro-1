@@ -8344,7 +8344,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 193.04 123.1899 0)
 			(effects
 				(font
@@ -8414,7 +8414,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 403.86 241.2999 0)
 			(effects
 				(font
@@ -8693,7 +8693,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 403.86 256.5399 0)
 			(effects
 				(font
@@ -8763,7 +8763,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 378.46 256.5399 0)
 			(effects
 				(font
@@ -8985,7 +8985,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 218.44 107.9499 0)
 			(effects
 				(font
@@ -9832,7 +9832,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 218.44 123.1899 0)
 			(effects
 				(font
@@ -10948,7 +10948,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 193.04 107.9499 0)
 			(effects
 				(font
@@ -11282,7 +11282,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "10K"
 			(at 378.46 241.2999 0)
 			(effects
 				(font
