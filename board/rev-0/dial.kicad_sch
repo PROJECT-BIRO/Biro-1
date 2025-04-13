@@ -2790,7 +2790,7 @@
 		(members "UH" "VH" "WH" "UL" "VL" "WL" "VIO" "DIAG")
 	)
 	(bus_alias "MTR_OUT"
-		(members "U" "V" "W")
+		(members "SDA" "SCL")
 	)
 	(junction
 		(at 299.72 162.56)
