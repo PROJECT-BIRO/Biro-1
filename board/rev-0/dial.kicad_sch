@@ -6,7 +6,7 @@
 	(paper "C")
 	(title_block
 		(title "Dial")
-		(date "2025-03-28")
+		(date "2025-04-20")
 		(rev "0")
 		(company "Biro")
 		(comment 1 "Biro 1")
@@ -2790,7 +2790,7 @@
 		(members "UH" "VH" "WH" "UL" "VL" "WL" "VIO" "DIAG")
 	)
 	(bus_alias "MTR_OUT"
-		(members "SDA" "SCL")
+		(members "U" "V" "W")
 	)
 	(junction
 		(at 299.72 162.56)
@@ -8949,7 +8949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC_5V"
+		(property "Value" "VCC_5V5"
 			(at 508 71.12 0)
 			(effects
 				(font
@@ -8975,7 +8975,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC_5V\""
+		(property "Description" "Power symbol creates a global label with name \"VCC_5V5\""
 			(at 508 76.2 0)
 			(effects
 				(font
