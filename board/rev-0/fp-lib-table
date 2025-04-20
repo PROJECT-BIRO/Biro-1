@@ -20,4 +20,6 @@
   (lib (name "022232031")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/022232031.pretty")(options "")(descr ""))
   (lib (name "TMC6300")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/TMC6300.pretty")(options "")(descr ""))
   (lib (name "LED_IN-PI55TAT_INL")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/LED_IN-PI55TAT_INL.pretty")(options "")(descr ""))
+  (lib (name "RGT16_1P7X1P7")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/RGT16_1P7X1P7.pretty")(options "")(descr ""))
+  (lib (name "CONN_S2B-PH-K-S_JST")(type "KiCad")(uri "${BIRO_LIB_DIR}/footprints/CONN_S2B-PH-K-S_JST.pretty")(options "")(descr ""))
 )
