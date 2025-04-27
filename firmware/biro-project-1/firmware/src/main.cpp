@@ -19,6 +19,14 @@ static MotorTask motor_task(1, config);
 InterfaceTask interface_task(0, motor_task, display_task_p);
 
 void setup() {
+  /*
+  Serial.begin(115200);   // Start Serial at 115200 baud (or whatever you want)
+  while (!Serial) {
+    ; // Wait for serial port to connect. Needed for native USB boards (like ESP32-S3)
+  }
+  //delay(10000);  // Give 2 seconds for USB Serial to fully initialize
+*/
+  Serial.println("Setup Start!");
   #if SK_DISPLAY
   display_task.setLogger(&interface_task);
   display_task.begin();
@@ -30,7 +38,7 @@ void setup() {
   interface_task.begin();
 
   config.setLogger(&interface_task);
-  config.loadFromDisk();
+  //config.loadFromDisk();
 
   interface_task.setConfiguration(&config);
 
