@@ -48,7 +48,7 @@ void setup() {
   motor_task.setLogger(&interface_task);
   motor_task.begin();
 
-  // bluetooth_task.setLogger(&interface_task);
+  bluetooth_task.setLogger(&interface_task);
   bluetooth_task.begin();
 
   // Free up the Arduino loop task

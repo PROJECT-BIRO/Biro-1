@@ -24,7 +24,7 @@ class BluetoothTask: public Task<BluetoothTask>, public BLEServerCallbacks {
         void sendKeypress(uint8_t keycode);
         void sendConsumerAction(uint8_t action);
 
-        
+        void setLogger(Logger* logger);
 
     protected:
         void run();
@@ -44,4 +44,7 @@ class BluetoothTask: public Task<BluetoothTask>, public BLEServerCallbacks {
         // Callbacks
         void onConnect(BLEServer* pServer) override;
         void onDisconnect(BLEServer* pServer) override;
+
+        Logger* logger_;
+        void log(const char* msg);
 };

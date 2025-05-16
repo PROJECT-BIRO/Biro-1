@@ -12,17 +12,17 @@ BluetoothTask::~BluetoothTask() {
 
 void BluetoothTask::run() {
     setupBLE();
+    log("Done setup\n");
     advertise();
-
-    if (deviceConnected) {
-        sendConsumerAction(0xCD); // Play/Pause
-        sendKeypress(0x04); // 'a' key
-        delay(2000);              // Wait 2 seconds before repeating
-    }    
+    log("Advertised\n");
 
     while (true) {
         // use queue or event bits to wait for input signals
+        sendConsumerAction(0xCD); // Play/Pause
+        sendKeypress(0x04); // 'a' key
+        delay(2000);              // Wait 2 seconds before repeating
         vTaskDelay(1000 / portTICK_PERIOD_MS);
+        log("WHILE LOOP\n");
     }
 }
 
@@ -93,10 +93,10 @@ void BluetoothTask::setupBLE() {
     pHID->startServices();
 
     BLESecurity* pSecurity = new BLESecurity();
-    pSecurity->setAuthenticationMode(ESP_LE_AUTH_NO_BOND);
+    pSecurity->setAuthenticationMode(ESP_LE_AUTH_BOND);
     pSecurity->setCapability(ESP_IO_CAP_NONE);
 
-    pHID->manufacturer("WDBA");
+    // pHID->manufacturer("WDBA");
 
 }
 
@@ -112,52 +112,54 @@ void BluetoothTask::advertise() {
     Serial.println("BLE advertising started");
 }
 
-// void BluetoothTask::sendConsumerAction(uint8_t action) {
-//     if (deviceConnected && inputConsumer) {
-//         uint8_t buffer[2] = { 0x01, (uint8_t)action }; // example payload
-//         inputConsumer->setValue(buffer, sizeof(buffer));
-//         inputConsumer->notify();
-//     }
-// }
-
-// void BluetoothTask::sendKeypress(uint8_t keyCode) {
-//     if (deviceConnected && keyboardInput) {
-//         uint8_t buffer[2] = { 0x02, keyCode }; // example payload
-//         keyboardInput->setValue(buffer, sizeof(buffer));
-//         keyboardInput->notify();
-//     }
-// }
-
-void BluetoothTask::sendKeypress(uint8_t keycode) {
-    if (!deviceConnected || !keyboardInput) return;
-
-    uint8_t report[8] = { 0 }; // HID keyboard report: [mods, reserved, key1, key2, ..., key6]
-    report[2] = keycode;
-
-    keyboardInput->setValue(report, sizeof(report));
-    keyboardInput->notify();
-
-    // Send key release (all 0s)
-    delay(10);  // Small delay ensures host processes key press
-    memset(report, 0, sizeof(report));
-    keyboardInput->setValue(report, sizeof(report));
-    keyboardInput->notify();
+void BluetoothTask::sendConsumerAction(uint8_t action) {
+    if (inputConsumer) {
+        uint8_t buffer[2] = { 0x01, (uint8_t)action }; // example payload
+        inputConsumer->setValue(buffer, sizeof(buffer));
+        inputConsumer->notify();
+        log("SENT CONSUMER ACTION\n");
+    }
 }
 
-void BluetoothTask::sendConsumerAction(uint8_t actionCode) {
-    if (!deviceConnected || !inputConsumer) return;
-
-    uint8_t report[2] = { actionCode & 0xFF, (actionCode >> 8) & 0xFF };
-
-    inputConsumer->setValue(report, sizeof(report));
-    inputConsumer->notify();
-
-    // Send "release"
-    delay(10);
-    uint8_t release[2] = { 0x00, 0x00 };
-    inputConsumer->setValue(release, sizeof(release));
-    inputConsumer->notify();
+void BluetoothTask::sendKeypress(uint8_t keyCode) {
+    if (keyboardInput) {
+        uint8_t buffer[2] = { 0x02, keyCode }; // example payload
+        keyboardInput->setValue(buffer, sizeof(buffer));
+        keyboardInput->notify();
+        log("SENT KEY PRESS");
+    }
 }
+
+// void BluetoothTask::sendKeypress(uint8_t keycode) {
+//     // if (!deviceConnected || !keyboardInput) return;
+
+//     uint8_t report[8] = { 0 }; // HID keyboard report: [mods, reserved, key1, key2, ..., key6]
+//     report[2] = keycode;
+
+//     keyboardInput->setValue(report, sizeof(report));
+//     keyboardInput->notify();
+
+//     // Send key release (all 0s)
+//     delay(10);  // Small delay ensures host processes key press
+//     memset(report, 0, sizeof(report));
+//     keyboardInput->setValue(report, sizeof(report));
+//     keyboardInput->notify();
+// }
+
+// void BluetoothTask::sendConsumerAction(uint8_t actionCode) {
+//     // if (!deviceConnected || !inputConsumer) return;
+
+//     uint8_t report[2] = { actionCode & 0xFF, (actionCode >> 8) & 0xFF };
+
+//     inputConsumer->setValue(report, sizeof(report));
+//     inputConsumer->notify();
+
+//     // Send "release"
+//     delay(10);
+//     uint8_t release[2] = { 0x00, 0x00 };
+//     inputConsumer->setValue(release, sizeof(release));
+//     inputConsumer->notify();
+// }
 
 // ---- Callback Definitions ----
 void BluetoothTask::onConnect(BLEServer* pServer) {
@@ -169,4 +171,14 @@ void BluetoothTask::onDisconnect(BLEServer* pServer) {
     deviceConnected = false;
     Serial.println("BLE device disconnected");
     BLEDevice::startAdvertising(); // Re-advertise after disconnection
+}
+
+void BluetoothTask::setLogger(Logger* logger) {
+    logger_ = logger;
+}
+
+void BluetoothTask::log(const char* msg) {
+    if (logger_ != nullptr) {
+        logger_->log(msg);
+    }
 }
