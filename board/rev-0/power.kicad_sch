@@ -6,10 +6,11 @@
 	(paper "C")
 	(title_block
 		(title "Power")
-		(date "2025-04-20")
+		(date "2025-05-18")
 		(rev "0")
 		(company "Biro")
 		(comment 1 "Biro 1")
+		(comment 2 "Ozayr Raazi")
 	)
 	(lib_symbols
 		(symbol "Battery_Management:BQ24075RGT"
